@@ -3,6 +3,20 @@ import { useState } from 'react';
 /*
     * example from the official React docs: https://react.dev/learn/thinking-in-react
     NOTE: YOU SHOULD NOT WRITE YOUR CODE IN A SINGLE FILE! THIS IS JUST FOR DEMONSTRATION PURPOSES.
+    * Suggestion to get started with React:
+    * 1. Create a new folder in the src directory called "components"
+    * 2. Create a new file called "FilterableProductTable.js"
+    * 3. Move the FilterableProductTable component code to the new file
+    * 4. Create a new file called "ProductTable.js"
+    * 5. Move the ProductTable component code to the new file
+    * 6. Create a new file called "SearchBar.js"
+    * 7. Move the SearchBar component code to the new file
+    * 8. Create a new file called "ProductCategoryRow.js"
+    * 9. Move the ProductCategoryRow component code to the new file
+    * 10. Create a new file called "ProductRow.js"
+    * 11. Move the ProductRow component code to the new file
+    * 12. Import the components in the App.js file
+    * 13. Use the components in the App component
  */
 
 function FilterableProductTable({ products }) {
