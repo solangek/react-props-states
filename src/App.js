@@ -67,17 +67,13 @@ function ProductTable({ products, filterText, inStockOnly }) {
   let lastCategory = null;
 
   products.forEach((product) => {
-    if (
-        product.name.toLowerCase().indexOf(
-            filterText.toLowerCase()
-        ) === -1
-    ) {
+    if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
       return;
     }
     if (inStockOnly && !product.stocked) {
       return;
     }
-    if (product.category !== lastCategory) {
+    if (product.category !== lastCategory) { // Add a category row
       rows.push(
           <ProductCategoryRow
               category={product.category}
@@ -124,6 +120,7 @@ function SearchBar({filterText, inStockOnly, onFilterTextChange, onInStockOnlyCh
   );
 }
 
+// note that products are already organized by category
 const PRODUCTS = [
   {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
   {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
